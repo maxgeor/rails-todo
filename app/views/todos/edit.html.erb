@@ -1,0 +1,13 @@
+<p style="margin-top: 24px; font-size: 16px;">
+  <%= link_to "← Back to todos", todos_path %>
+</p>
+<h1>Editing todo</h1>
+
+<%= render "form", todo: @todo %>
+<br/>
+<%= link_to 'Delete todo', @todo, method: :delete %>
+
+<br>
+
+<div>
+</div>

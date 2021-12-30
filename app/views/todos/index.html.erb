@@ -1,0 +1,13 @@
+<p style="color: green; font-weight: 700;"><%= notice %></p>
+
+<h1>Todos</h1>
+
+<div id="todos">
+  <% @todos.each do |todo| %>
+    <%= render todo %>
+  <% end %>
+</div>
+
+<p style="font-weight: 700; margin-top: 24px;">
+  <%= link_to "New todo", new_todo_path %>
+</p>
